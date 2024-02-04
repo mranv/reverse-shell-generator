@@ -76,6 +76,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="http://rohitkumarankam.com"><img src="https://avatars.githubusercontent.com/u/70012972?v=4?s=100" width="100px;" alt="Rohit Kumar Ankam"/><br /><sub><b>Rohit Kumar Ankam</b></sub></a><br /><a href="#tool-rohitkumarankam" title="Tools">🔧</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/t3l3machus"><img src="https://avatars.githubusercontent.com/u/75489922?v=4?s=100" width="100px;" alt="Panagiotis Chartas"/><br /><sub><b>Panagiotis Chartas</b></sub></a><br /><a href="#infra-t3l3machus" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#tool-t3l3machus" title="Tools">🔧</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/mranv"><img src="https://avatars.githubusercontent.com/u/61981861?v=4?s=100" width="100px;" alt="Anubhav Gain"/><br /><sub><b>Anubhav Gain</b></sub></a><br /><a href="https://mranv.github.io" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#tool-t3l3machus" title="Tools">🔧</a></td>
     </tr>
   </tbody>
 </table>
