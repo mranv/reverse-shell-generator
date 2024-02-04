@@ -11,11 +11,20 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [20]
+        node-version: [14, 16, 18, 20]
 
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v3
+
+    - name: Cache Node Modules
+      uses: actions/cache@v2
+      with:
+        path: |
+          ~/.npm
+          ~/.cache
+          ./node_modules
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
 
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
@@ -23,8 +32,11 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
 
+    - name: List Repository Contents
+      run: ls -l
+
     - name: Install Dependencies
-      run: npm init && npm ci
+      run: npm ci
 
     - name: Build Project
       run: npm run build --if-present
@@ -35,5 +47,5 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@4.1.6
       with:
-        branch: gh-pages  # GitHub Pages branch
-        folder: dist       # Update this based on your project structure
+        branch: gh-pages
+        folder: dist
